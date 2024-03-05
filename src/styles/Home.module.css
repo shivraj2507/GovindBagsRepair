@@ -1,0 +1,23 @@
+.headerDiv {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 26px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #cb4d1b, #28ee35);
+}
+
+.bg-card-hover:hover {
+    background: linear-gradient(90deg, rgba(149, 255, 246, 1) 0%, rgba(238, 130, 238, 1) 100%);
+    color: white;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+@media screen and (max-width: 768px) {
+    .headerDiv {
+        margin-left: 3px;
+    }
+}

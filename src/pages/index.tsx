@@ -1,0 +1,335 @@
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
+import Image from "next/image";
+import shop from "../../assets/img/Shop.jpg";
+import schoolBag10 from "../../assets/img/schoolbag.jpeg";
+import schoolBag1 from "../../assets/img/schoolbag1.jpg";
+import schoolBag2 from "../../assets/img/schoolbag2.jpeg";
+import schoolBag3 from "../../assets/img/schoolbag3.jpeg";
+import schoolBag4 from "../../assets/img/schoolbag4.jpeg";
+import schoolBag5 from "../../assets/img/schoolbag5.jpeg";
+import schoolBag7 from "../../assets/img/schoolbag7.jpeg";
+import schoolBag8 from "../../assets/img/schoolbag8.jpg";
+import schoolBag9 from "../../assets/img/schoolbag9.jpg";
+import trolleyB from "../../assets/img/trolleybag.jpeg";
+import trolley1 from "../../assets/img/trolleybag1.jpg";
+import trolley2 from "../../assets/img/trolleybag2.jpg";
+import trolley3 from "../../assets/img/trolleybag3.jpg";
+import trolley4 from "../../assets/img/trolleybag4.jpg";
+import trolley5 from "../../assets/img/trolleybag5.jpg";
+import trolley6 from "../../assets/img/trolleybag6.jpeg";
+import purse1 from "../../assets/img/ladybag1.jpg";
+import purse2 from "../../assets/img/ladybag2.jpg";
+import purse3 from "../../assets/img/ladybag3.jpg";
+import purse4 from "../../assets/img/ladybag4.jpg";
+import worker2 from "../../assets/img/worker2.jpg";
+import logo from "../../assets/img/mainLogo.jpg";
+import worker from "../../assets/img/worker.jpg";
+import Card from "../../components/Card/Card";
+
+export default function Home() {
+  const order = [
+    "थोक व फुटकर विक्रेत",
+    "स्कूल बैग",
+    "ट्रैवल बैग",
+    "बैग मटेरियल",
+    " ट्रैक्टर  छतरी",
+    " बैग मटेरियल स्पेसिफिक डिजाइन के सीट कवर ",
+    "और सभी प्रकार के ऑर्डर पर बैग तैयार किए जाते हैं।",
+  ];
+  const schoolBag = [
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag7,
+    },
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag8,
+    },
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag9,
+    },
+    {
+      text: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag10,
+    },
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag1,
+    },
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag2,
+    },
+
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag3,
+    },
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag4,
+    },
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: schoolBag5,
+    },
+  ];
+  const shopData = [
+    {
+      img: worker,
+    },
+    {
+      img: shop,
+    },
+    {
+      img: worker2,
+    },
+  ];
+  const trolley = [
+    {
+      img: trolleyB,
+      title: " गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "9450805349,7054141246",
+    },
+    {
+      img: trolley1,
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "9450805349,7054141246",
+    },
+    {
+      img: trolley2,
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "9450805349,7054141246",
+    },
+    {
+      img: trolley3,
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "9450805349,7054141246",
+    },
+    {
+      img: trolley4,
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "9450805349,7054141246",
+    },
+    {
+      img: trolley5,
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "9450805349,7054141246",
+    },
+    {
+      img: trolley6,
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "9450805349,7054141246",
+    },
+  ];
+  const purse = [
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: purse1,
+    },
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: purse2,
+    },
+
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: purse3,
+    },
+    {
+      title: "गोविंद बैग रिपेयर्स बुढपुर-आजमगढ ",
+      contact: "7054141246",
+      contact2: "9450805349",
+      img: purse4,
+    },
+  ];
+  const innerContainerStyling = "max-2xl:px-1 max-xl:px-4 max-xs:px-2";
+  return (
+    <>
+      <Head>
+        <title>गोविंद बैग रिपेयर</title>
+        <meta name="description" content="Generated by create next app" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.png" />
+      </Head>
+      <header className="md:mb-16 mb-5">
+        <div>
+          <Image src={logo} alt="img" height={500} className="w-full h-96" />
+        </div>
+      </header>
+      <section>
+        <div className=" mx-auto lg:max-w-7xl bg-lightface  flex  md:flex-row flex-col w-full items-center">
+          <div className="relative w-11/12  md:w-2/4 ">
+            <h1
+              id="headerText"
+              className="text-4xl md:text-6xl font-medium mb-0 md:mb-2 mx-4  max-sm: font-serif text-SkyBlue"
+            >
+              गोविंद बैग रिपेयर्स
+            </h1>
+            <div className="h-[275px] mb-7">
+              <ul className=" mx-3 px-4 pb-4 md:pb-16 ">
+                {order.map((item, i) => {
+                  return (
+                    <li key={i} className=" mb-1 list-disc ">
+                      <p
+                        id="headerText"
+                        className="text-xl hover:text-SkyBlue text-gray-500 "
+                      >
+                        {item}
+                      </p>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+
+          <div
+            id="headerImg"
+            className="max-w-md max-lg:max-w-sm w-11/12 md:w-3/4  mx-auto my-auto "
+          >
+            <Image
+              src={shop}
+              alt="mainLogo"
+              className="w-full h-full  rounded-3xl shadow-2xl shadow-SkyBlue"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="mb-10 mt-32 text-darkGrey">
+        <div className="mx-auto max-md:w-11/12 lg:max-w-7xl px-3">
+          <div>
+            <h3 className="text-4xl font-medium font-serif pt-5 ">स्कूल बैग</h3>
+            <span className={styles.headerDiv}></span>
+          </div>
+        </div>
+        <div className=" lg:max-w-7xl  m-auto  grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 gap-x-6 gap-y-20">
+          {schoolBag.map((item, i) => (
+            <div
+              id="benefit"
+              key={i}
+              className={`flex lg:gap-x-7 p-3 rounded gap-x-3 ${styles["bg-card-hover"]}`}
+            >
+              <Image
+                src={item.img}
+                alt="img"
+                className="rounded-lg h-80 w-44"
+              />
+
+              <div>
+                <h6 className="text-xl font-semibold mb-4 capitalize">
+                  {item.title}
+                </h6>
+                <p className="text-base font-medium">{item.text}</p>
+                <p className="text-lg font-medium">{item.contact}</p>
+                <p className="text-lg font-medium">{item.contact2}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <section className="bg-lightBlue pt-8 pb-11 mb-16">
+        <div className={`max-w-7xl m-auto ${innerContainerStyling}`}>
+          <div>
+            <h3 className="text-4xl font-medium font-serif pt-5 ">
+              हमारी दुकान
+            </h3>
+            <span className={styles.headerDiv}></span>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-6 justify-items-center ">
+            {shopData.map((item, i) => (
+              <div key={i} className="max-sm:max-w-xs">
+                <Image src={item.img} alt="img" className="mb-8  rounded-lg" />
+                
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <div className=" px-4 max-w-7xl mx-auto">
+        <h3 className="text-4xl font-medium font-serif pt-5 ">ट्रैवल बैग</h3>
+        <span className={styles.headerDiv}></span>
+      </div>
+
+      <section className="px-4  max-w-7xl my-12 justify-center  grid md:grid-cols-2 lg:grid-cols-3  gap-y-20 gap-x-12  mx-auto ">
+        {trolley.map((item) => (
+          <Card>
+            <div
+              className={`md:max-w-[413]  max-w-[300]   text-base rounded-xl text-lightGrey p-4 ${styles["bg-card-hover"]}  `}
+            >
+              <Image
+                src={item.img}
+                alt="img"
+                className="w-[413px] h-[560px] rounded-xl "
+              />
+              <h1 className="text-2xl py-6 font-semibold">{item.title}</h1>
+              <p className=" text-lg font-semibold mb-1">{item.contact}</p>
+            </div>
+          </Card>
+        ))}
+      </section>
+      <section className="mb-10 mt-32 text-darkGrey">
+        <div className="mx-auto max-md:w-11/12 lg:max-w-7xl px-3">
+          <div>
+            <h3 className="text-4xl font-medium font-serif pt-5 ">
+              {" "}
+              महिलाओं के बैग
+            </h3>
+            <span className={styles.headerDiv}></span>
+          </div>
+        </div>
+        <div className=" lg:max-w-7xl  m-auto  grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 gap-x-6 gap-y-20">
+          {purse.map((item, i) => (
+            <div
+              id="benefit"
+              key={i}
+              className={`flex lg:gap-x-7 p-3 rounded gap-x-3 ${styles["bg-card-hover"]}`}
+            >
+              <Image
+                src={item.img}
+                alt="img"
+                className="rounded-lg h-80 w-44"
+              />
+
+              <div>
+                <h6 className="text-xl font-semibold mb-4 capitalize">
+                  {item.title}
+                </h6>
+              
+                <p className="text-lg font-medium">{item.contact}</p>
+                <p className="text-lg font-medium">{item.contact2}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}
