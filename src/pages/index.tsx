@@ -180,7 +180,12 @@ export default function Home() {
       </Head>
       <header className="md:mb-16 mb-5">
         <div>
-          <Image src={logo} alt="img" height={500} className="w-full h-96" />
+          <Image
+            src={logo}
+            alt="img"
+            height={500}
+            className="w-full md:h-96  object-contain"
+          />
         </div>
       </header>
       <section>
@@ -229,7 +234,7 @@ export default function Home() {
             <span className={styles.headerDiv}></span>
           </div>
         </div>
-        <div className=" lg:max-w-7xl  m-auto  grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 gap-x-6 gap-y-20">
+        <div className=" lg:max-w-7xl  m-auto  grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 gap-x-6 gap-y-20 px-3 md:px-0">
           {schoolBag.map((item, i) => (
             <div
               id="benefit"

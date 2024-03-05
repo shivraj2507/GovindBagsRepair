@@ -48,7 +48,7 @@ const purse = () => {
             <span className={styles.headerDiv}></span>
           </div>
         </div>
-        <div className=" lg:max-w-7xl  m-auto grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 gap-x-6 gap-y-20">
+        <div className="px-3 md:px-0 lg:max-w-7xl  m-auto grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 gap-x-6 gap-y-20">
           {purse.map((item, i) => (
             <div
               id="benefit"

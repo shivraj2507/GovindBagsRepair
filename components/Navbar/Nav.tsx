@@ -21,7 +21,7 @@ const Nav = () => {
   }, [pathname]);
 
   return (
-    <nav className="w-full  shadow sticky top-0 bg-white z-10 mb-28 ">
+    <nav className="w-full  shadow sticky top-0 bg-white z-10 mb-3 ">
       <div className="h-24 justify-between px-4 mx-auto lg:max-w-7xl  md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-4 md:block">

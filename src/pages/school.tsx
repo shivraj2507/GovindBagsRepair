@@ -79,7 +79,7 @@ const school = () => {
             <span className={styles.headerDiv}></span>
           </div>
         </div>
-        <div className=" lg:max-w-7xl  m-auto  grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 gap-x-6 gap-y-20">
+        <div className=" lg:max-w-7xl px-3 md:px-0  m-auto  grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-16 gap-x-6 gap-y-20">
           {schoolBag.map((item, i) => (
             <div
               id="benefit"
