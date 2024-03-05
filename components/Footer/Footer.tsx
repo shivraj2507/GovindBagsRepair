@@ -70,7 +70,7 @@ const Footer = () => {
             <div className="lg:max-w-[250px]">
               <span className="flex items-center gap-x-2.5 mb-4">
                 <LocationIcon />
-                <p>गोविंद बैग रिपेयर्स बुढपुर-आजमगढ</p>
+                <p>गोविंद बैग रिपेयर्स बुढ़नपुर-आजमगढ</p>
               </span>
 
               <span className="flex items-center gap-x-2.5 mb-4">
