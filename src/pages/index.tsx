@@ -267,7 +267,6 @@ export default function Home() {
             {shopData.map((item, i) => (
               <div key={i} className="max-sm:max-w-xs">
                 <Image src={item.img} alt="img" className="mb-8  rounded-lg" />
-                
               </div>
             ))}
           </div>
@@ -279,8 +278,8 @@ export default function Home() {
       </div>
 
       <section className="px-4  max-w-7xl my-12 justify-center  grid md:grid-cols-2 lg:grid-cols-3  gap-y-20 gap-x-12  mx-auto ">
-        {trolley.map((item) => (
-          <Card>
+        {trolley.map((item, i) => (
+          <Card key={i}>
             <div
               className={`md:max-w-[413]  max-w-[300]   text-base rounded-xl text-lightGrey p-4 ${styles["bg-card-hover"]}  `}
             >
@@ -322,7 +321,7 @@ export default function Home() {
                 <h6 className="text-xl font-semibold mb-4 capitalize">
                   {item.title}
                 </h6>
-              
+
                 <p className="text-lg font-medium">{item.contact}</p>
                 <p className="text-lg font-medium">{item.contact2}</p>
               </div>
